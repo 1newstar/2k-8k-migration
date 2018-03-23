@@ -1,0 +1,11 @@
+SQL> @/home/oracle/checktableredef_18_03_2018.sql
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+SQL> spool off;

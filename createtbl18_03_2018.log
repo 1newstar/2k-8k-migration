@@ -1,0 +1,23 @@
+SQL> 
+SQL> declare
+  2  	  tableStmt varchar2(4000);
+  3  BEGIN
+  4    -- Select all tablespaces with blocksize 2k expect system and sysaux
+  5    FOR schemauser IN (select username from dba_users where username in ('HR'))
+  6  	LOOP
+  7  		for usertable in (select table_name, TABLESPACE_NAME from dba_tables where owner=''||schemauser.username||'')
+  8  		LOOP
+  9  			tableStmt:='create table '||schemauser.username||'.'||usertable.table_name||'8k tablespace '||usertable.tablespace_name||'8k where 1=0;';
+ 10  			dbms_output.put_line(tableStmt);
+ 11  			--EXECUTE IMMEDIATE tableStmt;
+ 12  		END LOOP;
+ 13  	END LOOP;
+ 14  END;
+ 15  /
+create table HR.TEST8k tablespace USERS8k where 1=0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+create table HR.USERS8k tablespace USERS8k where 1=0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+create table HR.SEGMENTS8k tablespace USERS8k where 1=0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+PL/SQL procedure successfully completed.
+
+SQL> spool off;

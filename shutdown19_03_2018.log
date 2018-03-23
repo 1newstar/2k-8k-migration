@@ -1,0 +1,11 @@
+SQL> select name, open_mode, database_role from v$database;
+
+NAME      OPEN_MODE            DATABASE_ROLE                                    
+--------- -------------------- ----------------                                 
+ORCL      READ WRITE           PRIMARY                                          
+
+SQL> shutdown immediate;
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+SQL> spool off;

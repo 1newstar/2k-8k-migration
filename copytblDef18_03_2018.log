@@ -1,0 +1,11 @@
+SQL> @/home/oracle/createtbl18_03_2018.sql
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> spool off;

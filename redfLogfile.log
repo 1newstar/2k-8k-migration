@@ -1,0 +1,6 @@
+SQL> set lin
+SP2-0267: linesize option 0 out of range (1 through 32767)
+SQL> 
+SQL> purge dba_recycl
+  2  
+SQL> spool off;

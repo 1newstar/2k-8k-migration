@@ -1,0 +1,78 @@
+
+Connected to: Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Oracle Label Security, OLAP, Data Mining,
+Oracle Database Vault and Real Application Testing option
+
+Export file created by EXPORT:V10.02.01 via conventional path
+
+Warning: the objects were exported by INTERVIEW, not by you
+
+import done in US7ASCII character set and AL16UTF16 NCHAR character set
+. importing INTERVIEW's objects into INTERVIEW
+IMP-00017: following statement failed with ORACLE error 2304:
+ "CREATE TYPE "CESFILES" TIMESTAMP '2009-02-10:12:07:43' OID '617912958FFCD06"
+ "1E040ED0A0CF06080'   as table of varchar2(256);"
+IMP-00003: ORACLE error 2304 encountered
+ORA-02304: invalid object identifier literal
+IMP-00017: following statement failed with ORACLE error 2304:
+ "CREATE TYPE "CESCLOB" TIMESTAMP '2009-02-10:11:52:40' OID '617912959000D061"
+ "E040ED0A0CF06080'   as object ("
+ "   vclob clob,"
+ "   fileName varchar2(256),"
+ "   mimeType varchar2(256)"
+ ");"
+IMP-00003: ORACLE error 2304 encountered
+ORA-02304: invalid object identifier literal
+IMP-00017: following statement failed with ORACLE error 2304:
+ "CREATE TYPE "CESCLOBS" TIMESTAMP '2009-02-10:11:52:10' OID '617912959006D06"
+ "1E040ED0A0CF06080'   as table of cesCLOB;"
+IMP-00003: ORACLE error 2304 encountered
+ORA-02304: invalid object identifier literal
+IMP-00017: following statement failed with ORACLE error 2304:
+ "CREATE TYPE "CESBLOB" TIMESTAMP '2009-01-27:09:57:24' OID '61791295900AD061"
+ "E040ED0A0CF06080'   as object ("
+ "   vblob blob,"
+ "   fileName varchar2(256),"
+ "   mimeType varchar2(256)"
+ ");"
+IMP-00003: ORACLE error 2304 encountered
+ORA-02304: invalid object identifier literal
+IMP-00017: following statement failed with ORACLE error 2304:
+ "CREATE TYPE "CESBLOBS" TIMESTAMP '2009-01-27:09:57:25' OID '617912959010D06"
+ "1E040ED0A0CF06080'   as table of cesBLOB;"
+IMP-00003: ORACLE error 2304 encountered
+ORA-02304: invalid object identifier literal
+. . importing table                    "CANDIDATE"          1 rows imported
+. . importing table                    "INTERVIEW"          2 rows imported
+. . importing table                   "LEVEL_TYPE"          3 rows imported
+. . importing table                     "QUESTION"         21 rows imported
+. . importing table            "QUESTION_INSTANCE"         21 rows imported
+. . importing table                "QUESTION_TYPE"          6 rows imported
+. . importing table           "SCHEDULED_QUESTION"          6 rows imported
+. . importing table                "SUBSCRIPTIONS"          8 rows imported
+. . importing table                        "TDEST"     102817 rows imported
+. . importing table                   "TDEST_BACK"     102817 rows imported
+. . importing table                   "TECHNOLOGY"          6 rows imported
+. . importing table                 "TRANSACTIONS"         10 rows imported
+. . importing table            "TRANSACTIONS_BACK"         10 rows imported
+. . importing table                      "TSOURCE"       9517 rows imported
+. . importing table                 "TSOURCE_BACK"       9517 rows imported
+. . importing table                        "USERS"         13 rows imported
+IMP-00017: following statement failed with ORACLE error 1:
+ "BEGIN   DBMS_JOB.ISUBMIT(JOB=>972,WHAT=>'send_instruction_email;',NEXT_DATE"
+ "=>TO_DATE('2010-10-19:16:06:00','YYYY-MM-DD:HH24:MI:SS'),INTERVAL=>'TRUNC(S"
+ "YSDATE+(5/24/60),''MI'')',NO_PARSE=>TRUE); END;"
+IMP-00003: ORACLE error 1 encountered
+ORA-00001: unique constraint (SYS.I_JOB_JOB) violated
+ORA-06512: at "SYS.DBMS_JOB", line 100
+ORA-06512: at line 1
+IMP-00017: following statement failed with ORACLE error 1:
+ "BEGIN   DBMS_JOB.ISUBMIT(JOB=>973,WHAT=>'send_question_email;',NEXT_DATE=>T"
+ "O_DATE('2010-10-19:16:06:00','YYYY-MM-DD:HH24:MI:SS'),INTERVAL=>'TRUNC(SYSD"
+ "ATE+(5/24/60),''MI'')',NO_PARSE=>TRUE); END;"
+IMP-00003: ORACLE error 1 encountered
+ORA-00001: unique constraint (SYS.I_JOB_JOB) violated
+ORA-06512: at "SYS.DBMS_JOB", line 100
+ORA-06512: at line 1
+About to enable constraints...
+Import terminated successfully with warnings.
