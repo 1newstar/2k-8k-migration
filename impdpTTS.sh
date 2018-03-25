@@ -56,7 +56,7 @@ rm $$.lst
 chmod +x `echo $IMPDPCMD`
 export ORACLE_SID=ora8k
 echo $ORACLE_SID
-#nohup $IMPDPCMD > impdpTTS.log &
+nohup $IMPDPCMD > impdpTTS.log &
 echo "Monitor Process :"$$
 
 exit

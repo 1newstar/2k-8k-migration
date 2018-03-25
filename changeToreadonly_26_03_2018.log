@@ -1,0 +1,13 @@
+SQL> set lines 555
+SQL> BEGIN
+  2    -- Select all tablespaces with blocksize 8k expect system and sysaux
+  3    FOR tts IN (select TABLESPACE_NAME from dba_tablespaces where block_size=8192 and contents='PERMANENT' and TABLESPACE_NAME not in ('SYSTEM','SYSAUX'))
+  4      LOOP
+  5  	EXECUTE IMMEDIATE 'ALTER tablespace '||tts.TABLESPACE_NAME||' read only';
+  6      END LOOP;
+  7  END;
+  8  /
+
+PL/SQL procedure successfully completed.
+
+SQL> spool off;

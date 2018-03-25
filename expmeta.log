@@ -1,0 +1,23 @@
+;;; 
+Import: Release 11.2.0.4.0 - Production on Mon Mar 26 02:23:44 2018
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Oracle Label Security, OLAP, Data Mining,
+Oracle Database Vault and Real Application Testing options
+Master table "SYS"."SYS_IMPORT_SCHEMA_01" successfully loaded/unloaded
+Starting "SYS"."SYS_IMPORT_SCHEMA_01":  "/******** AS SYSDBA" directory=dump_dir dumpfile=appmeta.dmp logfile=expmeta.log schemas=hr 
+Processing object type SCHEMA_EXPORT/USER
+ORA-31684: Object type USER:"HR" already exists
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/ROLE_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+ORA-39082: Object type ALTER_PROCEDURE:"HR"."OBJECT_ANALYSIS" created with compilation warnings
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+ORA-39082: Object type VIEW:"HR"."OBJVIEW" created with compilation warnings
+Job "SYS"."SYS_IMPORT_SCHEMA_01" completed with 3 error(s) at Mon Mar 26 02:24:08 2018 elapsed 0 00:00:13

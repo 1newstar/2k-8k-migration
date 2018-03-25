@@ -23,7 +23,7 @@ END;
 spool off;
 __EOF__
 
-cat $$.lst | grep ^create > ${FILE_NAME}
+cat $$.lst | grep ^create  | sed -n 's/ \+/ /gp' > ${FILE_NAME}
 rm $$.lst
 
 export OUTPUT_FILE=$HOME"/copytblDef"$DATE_TIME".log"

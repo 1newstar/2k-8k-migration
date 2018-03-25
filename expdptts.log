@@ -1,5 +1,5 @@
 ;;; 
-Export: Release 11.2.0.4.0 - Production on Mon Mar 19 16:13:32 2018
+Export: Release 11.2.0.4.0 - Production on Mon Mar 26 01:53:07 2018
 
 Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
 ;;; 
@@ -19,5 +19,5 @@ Dump file set for SYS.SYS_EXPORT_TRANSPORTABLE_01 is:
   /home/oracle/tts1st.dmp
 ******************************************************************************
 Datafiles required for transportable tablespace USERS8K:
-  /oradata/orcl/USERS8k.dbf
-Job "SYS"."SYS_EXPORT_TRANSPORTABLE_01" successfully completed at Mon Mar 19 16:14:22 2018 elapsed 0 00:00:37
+  /oradata/orcl/USERS8k01.dbf
+Job "SYS"."SYS_EXPORT_TRANSPORTABLE_01" successfully completed at Mon Mar 26 01:53:49 2018 elapsed 0 00:00:36

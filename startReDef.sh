@@ -44,7 +44,7 @@ __EOF__
 #exit
 
 cat $$.lst | sed -e '1,28d' > $$
-head -n -3 $$ > ${FILE_NAME}
+head -n -3 $$ | sed -n 's/ \+/ /gp' > ${FILE_NAME}
 rm $$.lst $$
 
 $ORACLE_HOME/bin/sqlplus /nolog << __EOF__ > /dev/null 2>&1

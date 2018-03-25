@@ -1,5 +1,5 @@
 ;;; 
-Import: Release 11.2.0.4.0 - Production on Mon Mar 19 22:32:52 2018
+Import: Release 11.2.0.4.0 - Production on Mon Mar 26 03:13:53 2018
 
 Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
 ;;; 
@@ -8,11 +8,11 @@ With the Partitioning, Oracle Label Security, OLAP, Data Mining,
 Oracle Database Vault and Real Application Testing options
 Master table "SYS"."SYS_IMPORT_TRANSPORTABLE_01" successfully loaded/unloaded
 Source time zone is +05:30 and target time zone is +00:00.
-Starting "SYS"."SYS_IMPORT_TRANSPORTABLE_01":  "/******** AS SYSDBA" directory=dump_dir dumpfile=tts1st.dmp logfile=impd_expdptts.log TRANSPORT_DATAFILES=/oradata/orcl/USERS8k.dbf 
+Starting "SYS"."SYS_IMPORT_TRANSPORTABLE_01":  "/******** AS SYSDBA" directory=dump_dir dumpfile=tts1st.dmp logfile=impd_expdptts.log TRANSPORT_DATAFILES=/oradata/orcl/USERS8k01.dbf 
 Processing object type TRANSPORTABLE_EXPORT/PLUGTS_BLK
 Processing object type TRANSPORTABLE_EXPORT/TABLE
 Processing object type TRANSPORTABLE_EXPORT/INDEX/INDEX
 Processing object type TRANSPORTABLE_EXPORT/INDEX_STATISTICS
 Processing object type TRANSPORTABLE_EXPORT/COMMENT
 Processing object type TRANSPORTABLE_EXPORT/POST_INSTANCE/PLUGTS_BLK
-Job "SYS"."SYS_IMPORT_TRANSPORTABLE_01" successfully completed at Mon Mar 19 22:33:03 2018 elapsed 0 00:00:08
+Job "SYS"."SYS_IMPORT_TRANSPORTABLE_01" successfully completed at Mon Mar 26 03:14:09 2018 elapsed 0 00:00:11

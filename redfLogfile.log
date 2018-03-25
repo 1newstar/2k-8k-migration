@@ -1,6 +1,75 @@
-SQL> set lin
-SP2-0267: linesize option 0 out of range (1 through 32767)
-SQL> 
-SQL> purge dba_recycl
-  2  
+SQL> set lines 555
+SQL> @/home/oracle/redef2k_8k26_03_2018.sql
+
+PL/SQL procedure successfully completed.
+
+0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Table dropped.
+
+
+DBA Recyclebin purged.
+
+
+PL/SQL procedure successfully completed.
+
+declare
+*
+ERROR at line 1:
+ORA-01442: column to be modified to NOT NULL is already NOT NULL 
+ORA-06512: at "SYS.DBMS_REDEFINITION", line 1015 
+ORA-06512: at "SYS.DBMS_REDEFINITION", line 1907 
+ORA-06512: at line 4 
+
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Table dropped.
+
+
+DBA Recyclebin purged.
+
+
+Index altered.
+
+
+PL/SQL procedure successfully completed.
+
+0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Table dropped.
+
+
+DBA Recyclebin purged.
+
+
+Index altered.
+
+SQL> purge dba_recyclebin;
+
+DBA Recyclebin purged.
+
 SQL> spool off;

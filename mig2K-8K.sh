@@ -14,7 +14,7 @@ BEGIN
   -- Select all tablespaces with blocksize 2k expect system and sysaux
   FOR schemauser IN (select username from dba_users where username in ('HR'))
 	LOOP
-		for usertable in (select table_name from dba_tables where owner=''||schemauser.username||'')
+		for usertable in (select table_name from dba_tables where table_name not like '%8K' and owner=''||schemauser.username||'')
 		LOOP
 			dbms_output.put_line('');
 			dbms_output.put_line('--## Script for tablespace: '||usertable.table_name);
@@ -31,7 +31,7 @@ __EOF__
 ##
 ## Move the output to file
 ##
-cat $$.lst | grep ^exe > $FILE_NAME
+cat $$.lst | grep ^exe |  sed -n 's/ \+/ /gp' > $FILE_NAME
 rm $$.lst
 
 
